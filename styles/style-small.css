@@ -105,12 +105,15 @@ header {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px);
+    transform: translateY(0px); /* Correction de la casse de translateY */
     animation: float 6s ease-in-out infinite;
-    img {
-        width: 100%;
-        height: auto;
-    }
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+}
+
 }
 
 header h1 {
