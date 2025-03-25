@@ -31,11 +31,9 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/directory.css" />
 
-    <script type="module" src="./scripts/app.js"></script>
-    <script src="./scripts/modules/directory.js" defer></script>
-
-    <link rel="icon" href="images/favicon-main-modified.ico" sizes="48x48" type="image/ico">
+    <!-- Liens de préchargement ou de chargement de l'icône FontAwesome -->
     <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body id="directory-page">
@@ -57,7 +55,6 @@
     </header>
 
     <main>
-        <!-- Le <h1> doit être le premier élément dans <main> et correspondre au titre de la page -->
         <h1 class="Main-title">Directory | YAMOUSSOUKRO Chamber of Commerce</h1>
 
         <div class="button-box">
@@ -66,7 +63,6 @@
         </div>
 
         <div id="directory-box">
-            <!-- Exemple de liens d'ancrage pour des sections spécifiques -->
             <section id="business-1">
                 <h2><a href="#business-1">Business 1</a></h2>
                 <p>Description de l'entreprise 1.</p>
@@ -86,9 +82,13 @@
         <p>&copy;<span id="currentyear">Lorem</span> ZAGADOU FRANCK |
             YAMOUSSOUKRO</p>
         <p id="lastModified">Lorem ipsum</p>
-        <!-- Ajouter un lien d'ancrage dans le footer -->
         <a href="#top">Back to top</a>
     </footer>
+
+    <!-- Fichiers JS placés à la fin pour garantir le chargement des éléments HTML avant leur exécution -->
+    <!-- Chargement des fichiers JS avec l'attribut defer -->
+    <script type="module" src="./scripts/app.js" defer></script>
+    <script src="./scripts/modules/directory.js" defer></script>
 
 </body>
 
