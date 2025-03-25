@@ -13,7 +13,6 @@
     <meta property="og:description" content="Chamber of YAMOUSSOUKRO, Join us to get more information">
     <meta property="fb:app_id" content="your-app-id-here">
 
-
     <title>Directory | YAMOUSSOUKRO Chamber of Commerce</title>
     <meta name="description" content="Chamber directory, YAMOUSSOUKRO" />
     <meta name="author" content="ZAGADOU FRANCK" />
@@ -35,7 +34,6 @@
     <script type="module" src="./scripts/app.js"></script>
     <script src="./scripts/modules/directory.js" defer></script>
 
-
     <link rel="icon" href="images/favicon-main-modified.ico" sizes="48x48" type="image/ico">
     <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
 </head>
@@ -46,32 +44,52 @@
             <div class="box-logo-header">
                 <img class="logo-chamber" src="../chamber/images/favicon-main.webp"
                     alt="Logo Chamber YAMOUSSOUKRO" />
-                <h1 class="nameHeader">YAMOUSSOUKRO Chamber of Ecomerces</h1>
+                <h1 class="nameHeader">YAMOUSSOUKRO Chamber of Commerce</h1>
                 <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
             </div>
             <ul>
-                <li><a class="nav-a " href="./index.html">Home</a></li>
-                <li><a class="nav-a " href="./discover.html">Discover</a></li>
-                <li><a class="nav-a " href="./directory.html">Directory</a></li>
-                <li><a class="nav-a " href="./join.html">Join</a></li>
+                <li><a class="nav-a" href="./index.html">Home</a></li>
+                <li><a class="nav-a" href="./discover.html">Discover</a></li>
+                <li><a class="nav-a" href="./directory.html">Directory</a></li>
+                <li><a class="nav-a" href="./join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2 class="Main-title"> Directory of YAMOUSSOUKRO Chamber of Commerce</h2>
+        <!-- Le titre doit être le premier élément dans le main et refléter correctement le contenu -->
+        <h1 class="Main-title">Directory of YAMOUSSOUKRO Chamber of Commerce</h1>
+
         <div class="button-box">
-            <button title="List view" class='mybtn activebtn' id="list-view-btn"><i class='fas fa-list'></i></button>
-            <button title="Grid view" class='mybtn' id="grid-view-btn"><i class='fas fa-border-all'></i></button>
+            <button title="List view" class="mybtn activebtn" id="list-view-btn"><i class="fas fa-list"></i></button>
+            <button title="Grid view" class="mybtn" id="grid-view-btn"><i class="fas fa-border-all"></i></button>
         </div>
 
-        <div id="directory-box"></div>
+        <div id="directory-box">
+            <!-- Exemple de liens d'ancrage pour des sections spécifiques -->
+            <section id="business-1">
+                <h2><a href="#business-1">Business 1</a></h2>
+                <p>Description de l'entreprise 1.</p>
+            </section>
+            <section id="business-2">
+                <h2><a href="#business-2">Business 2</a></h2>
+                <p>Description de l'entreprise 2.</p>
+            </section>
+            <section id="business-3">
+                <h2><a href="#business-3">Business 3</a></h2>
+                <p>Description de l'entreprise 3.</p>
+            </section>
+        </div>
     </main>
+
     <footer>
         <p>&copy;<span id="currentyear">Lorem</span> ZAGADOU FRANCK |
             YAMOUSSOUKRO</p>
         <p id="lastModified">Lorem ipsum</p>
+        <!-- Ajouter un lien d'ancrage dans le footer -->
+        <a href="#top">Back to top</a>
     </footer>
+
 </body>
 
 </html>
