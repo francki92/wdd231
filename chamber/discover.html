@@ -7,10 +7,12 @@
 
     <meta property="og:title" content="Directory | Chamber YAMOUSSOUKRO">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://francki92.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
+    <meta property="og:image"
+        content="https://francki92.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
     <meta property="og:url" content="https://francki92.github.io/wdd231/chamber/directory.html">
     <meta property="og:description" content="Chamber of YAMOUSSOUKRO, Join us to get more information">
-    <meta property="fb:app_id" content="your-app-id-here"> <!-- Remplir avec l'ID de votre app Facebook -->
+    <meta property="fb:app_id" content="your-app-id-here">
+
 
     <title>Discover | YAMOUSSOUKRO Chamber of Commerce</title>
     <meta name="description" content="Chamber directory, YAMOUSSOUKRO" />
@@ -18,9 +20,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
     </noscript>
 
     <link rel="stylesheet" href="styles/normalize.css" />
@@ -28,6 +33,7 @@
 
     <script type="module" src="./scripts/app.js"></script>
     <script src="./scripts/modules/discover.js" defer></script>
+
 
     <link rel="icon" href="images/favicon-main.ico" sizes="48x48" type="image/ico">
     <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
@@ -38,14 +44,14 @@
         <nav>
             <div class="box-logo-header">
                 <img class="logo-chamber" src="images/logo-chamber.webp" alt="Logo Chamber YAMOUSSOUKRO" />
-                <h1 class="nameHeader">YAMOUSSOUKRO City<br>Chamber of Commerce</h1>
+                <h1 class="nameHeader">YAMOUSSOUKRO City<br>Chamber of Ecomerces</h1>
                 <button name="navigation button" id="menu" aria-label="Toggle menu"></button>
             </div>
             <ul>
-                <li><a class="nav-a" href="./index.html">Home</a></li>
-                <li><a class="nav-a" href="./discover.html">Discover</a></li>
-                <li><a class="nav-a" href="./directory.html">Directory</a></li>
-                <li><a class="nav-a" href="./join.html">Join</a></li>
+                <li><a class="nav-a " href="./index.html">Home</a></li>
+                <li><a class="nav-a " href="./discover.html">Discover</a></li>
+                <li><a class="nav-a " href="./directory.html">Directory</a></li>
+                <li><a class="nav-a " href="./join.html">Join</a></li>
             </ul>
         </nav>
     </header>
@@ -58,7 +64,7 @@
                 </header>
                 <ul>
                     <li><strong>Capital:</strong> YAMOUSSOUKRO City</li>
-                    <li><strong>Currencies:</strong> franc CFA, IVOIRIAN</li>
+                    <li><strong>Currencies:</strong> franc CFA, IVOIRIAN </li>
                     <li><strong>Official language:</strong> FRANCAIS</li>
                     <li><strong>Population:</strong> 30,515,577</li>
                     <li><strong>Dialing code:</strong> +225</li>
@@ -68,7 +74,7 @@
             </article>
             <article class="article-03">
                 <table id="calendar">
-                    <caption></caption>
+                    <caption></caption> <!-- Moved out of thead -->
                     <thead>
                         <tr>
                             <th>Dom</th>
@@ -83,47 +89,49 @@
                     <tbody> </tbody>
                 </table>
             </article>
+
         </section>
         <section class="local-photos">
             <figure>
-                 <img data-src="images/civ1.jpg" src="images/civ1.jpg" alt="Mountain landscape"
+                <img data-src="images/civ1.png" src="images/civ1.png"
+                    alt="Beautiful sunset over the beach" class="lazy-image" loading="lazy">
                 <figcaption>Beautiful sunset over the beach</figcaption>
             </figure>
             <figure>
-                <img src="images/civ2.jpg" alt="Historic town square" class="lazy-image" loading="lazy">
+                <img data-src="images/civ2.jpg" src="images/civ2.jpg" alt="Historic town square"
+                    class="lazy-image" loading="lazy">
                 <figcaption>Historic town square</figcaption>
             </figure>
             <figure>
-                <img src="images/civ1.png" alt="Lush rainforest" class="lazy-image" loading="lazy">
+                <img data-src="images/Abidjan_3.png" src="images/Abidjan_3.png" alt="Lush rainforest"
+                    class="lazy-image" loading="lazy">
                 <figcaption>Lush rainforest</figcaption>
             </figure>
             <figure>
-                <img src="images/cote d'ivoire4.webp" alt="Mon pays" class="lazy-image" loading="lazy">
+                <img data-src="images/civ2-2.jpg" src="images/civ2-2.jpg" alt="Mountain landscape"
+                    class="lazy-image" loading="lazy">
                 <figcaption>Mountain landscape</figcaption>
             </figure>
             <figure>
-                <img src="images/cote d'ivoire4.webp" alt="Abidajn" class="lazy-image" loading="lazy">
+                <img data-src="images/cote d'ivoire4.webp" src="images/cote d'ivoire4.webp" alt="Colonial architecture"
+                    class="lazy-image" loading="lazy">
                 <figcaption>Colonial architecture</figcaption>
             </figure>
             <figure>
-                <img src="images/civ1.png" alt="Yamoussoukro" class="lazy-image" loading="lazy">
+                <img data-src="images/civ1.png" src="images/civ1.png" alt="Vibrant city skyline"
+                    class="lazy-image" loading="lazy">
                 <figcaption>Vibrant city skyline</figcaption>
             </figure>
         </section>
     </main>
 
     <footer>
-        <p>&copy;<span id="currentyear"></span> ZAGADOU FRANCK | YAMOUSSOUKRO</p>
-        <p id="lastModified">Last Modified: <span id="last-modified"></span></p>
+        <p>&copy;<span id="currentyear">Lorem</span> ZAGADOU FRANCK |
+            YAMOUSSOUKRO</p>
+        <p id="lastModified">Lorem ipsum</p>
     </footer>
 
-    <script>
-        // Set current year dynamically
-        document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-        // Set the last modified date
-        document.getElementById("last-modified").textContent = document.lastModified;
-    </script>
 </body>
 
 </html>
+
