@@ -142,6 +142,31 @@
     </footer>
 
 </body>
+    <script>
+    const article2 = document.querySelector("#article-02");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const currentTime = Date.now();
+    const oneDay = 1000 * 60 * 60 * 24;
+
+    let message = "";
+
+    if (!lastVisit) {
+        message = "Bienvenue sur notre site pour la première fois ! 🎉";
+    } else {
+        const daysPassed = Math.floor((currentTime - Number(lastVisit)) / oneDay);
+
+        if (daysPassed < 1) {
+            message = "Bienvenue de retour ! Vous êtes revenu aujourd’hui. 👋";
+        } else {
+            message = `Bienvenue de retour ! Votre dernière visite était il y a ${daysPassed} jour(s). 🕒`;
+        }
+    }
+
+    localStorage.setItem("lastVisit", currentTime);
+
+    article2.innerHTML = `<p>${message}</p>`;
+</script>
+
 
 </html>
 
