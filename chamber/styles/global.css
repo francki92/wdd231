@@ -467,11 +467,11 @@ footer p:first-child {
 
 .card {
   background-color: white;
-  border-radius: 80px;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .card img {
